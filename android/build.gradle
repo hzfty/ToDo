@@ -1,3 +1,18 @@
+buildscript {
+    ext.kotlin_verson = '1.7.10'
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+
+buildscript {
+    dependencies {
+       // classpath "org.jetbrains.kotlin:kotlin=gradle-plugin:$kotlin_version"
+        classpath 'com.google.gms:google-services:4.3.15'  // Проверь актуальную версию
+    }
+}
+
 allprojects {
     repositories {
         google()
@@ -24,3 +39,4 @@ tasks.register("clean", Delete) {
 //   id("com.google.gms.google-services") version "4.4.2" apply false
 
 // }
+//classpath 'com.google.gms:google-services:4.3.10'
