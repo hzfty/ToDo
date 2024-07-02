@@ -18,7 +18,7 @@ class MainScreen extends StatelessWidget {
                   Navigator.pushNamedAndRemoveUntil(
                       context, '/', (route) => false);
                 },
-                child: Text('На галвную')),
+                child: Text('На главную')),
             Padding(padding: EdgeInsets.only(left: 15)),
             Text('Наше простое меню')
           ],
@@ -39,7 +39,7 @@ class MainScreen extends StatelessWidget {
           actions: [
             IconButton(
               icon: Icon(Icons.menu_outlined),
-              onPressed: () => _menuOpen,
+              onPressed: () => _menuOpen(context),
             )
           ],
           centerTitle: true,
